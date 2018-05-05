@@ -1,0 +1,757 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic|Great+Vibes|Allura);
+
+/************************
+***Header Navigation*****
+*************************/
+header ul {
+  padding-top: 15px;
+}
+
+header .navbar {
+  padding: 30px 0;
+  transition: all .5s ease-out;
+}
+
+header .navbar-default {
+  background-color: rgba(0,0,0, .5);
+  border: none;
+}
+
+header .navbar-default .navbar-nav a {
+  color: white;
+  padding: 5px 8px;
+}
+
+header .navbar-default .navbar-nav a:hover {
+  color: #DAA520;
+}
+
+header .navbar-default .navbar-nav .active a {
+  font-weight: 700;
+  color: #DAA520;
+  background: transparent;
+  border-bottom: 1px solid #DAA520;
+  text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+  color: #DAA520;
+  background: transparent;
+  border-bottom: 1px solid #DAA520;
+  text-shadow: none;
+}
+
+/**  Navbar Brand **/
+header .navbar-brand span.subhead {
+  display: block;
+  font-family: "Roboto Slab", serif;
+  font-size: .6em;
+  font-weight: 100;
+}
+
+/**  Navbar Toggle **/
+header .navbar-toggle {
+  background-color: #279182;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+@media only screen
+and (max-width: 768px) {
+  header .navbar-collapse.in {
+    background-color: rgba(0,0,0, .5);
+  }
+}
+
+/**  nav inbody **/
+
+header .inbody {
+  background: rgba(0,0,0,.9);
+}
+
+header .navbar.inbody {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header .navbar.inbody .navbar-nav {
+  padding-top: 10px;
+}
+
+header .inbody .navbar-brand {
+  background-size: 43px;
+  background-position: top left;
+  margin-top: 5px;
+  padding-bottom: 0;
+  margin-left: 10px;
+}
+
+header .inbody .navbar-brand h1 {
+  font-size: 1.1em;
+}
+
+header .inbody .navbar-brand span.subhead {
+  display: none;
+}
+
+
+/************************
+**********Global*********
+*************************/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header .navbar-brand h1, .hero h1 {
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+}
+
+header .navbar-brand h1, .font-brand{
+  font-family: 'Great Vibes', Arial, serif;
+  color: #DAA520;
+}
+
+.hero h1 {
+  font-family: 'Allura', Arial, serif;
+  font-size: 6.5em;
+}
+
+header .navbar,
+h2,
+h3,
+.hero h3,
+.hero .btn,
+h4,
+blockquote p,
+blockquote small,
+p,
+.font-copyright,
+.font-subbrand,
+.nav-pills p,
+.map-reminder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header .navbar-brand h1 {
+  font-size: 2em;
+}
+
+header .navbar {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.hero h3, .hero .btn {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+blockquote p{
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+blockquote small{
+  font-size: 0.8em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.content {
+  padding: 5em;
+}
+
+.page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.background-grey-900 {
+  background-color: #212121;
+}
+
+.background-grey-800 {
+  background-color: #424242;
+}
+
+.background-dark {
+  background-color: #011627;
+}
+
+.background-grey-50 {
+  background-color: #FAFAFA;
+}
+
+.background-grey-100 {
+  background-color: #F5F5F5;
+}
+
+.background-blue-grey-900 {
+  background-color: #263238;
+}
+
+.font-white {
+  color: #FFFFFF;
+}
+
+.font-dark {
+  color: #0f0f0f;
+}
+
+#contact h2, #contact p, #contact h4  {
+  /*text-shadow:0 0 50px #000000;*/
+}
+
+#facilities .fa-circle, footer .fa-circle {
+  color: transparent;
+}
+
+.separator {
+  background: url(../images/separator-gold.png) no-repeat center center scroll;
+  width: 200px;
+  margin: -10px auto 30px auto;
+}
+
+/************************
+*********Featured********
+*************************/
+/* Carousel */
+
+/* Carousel Text */
+.hero {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  text-transform: none;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -moz-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  -o-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.fade-carousel .carousel-inner .item .hero {
+  opacity: 0;
+  -webkit-transition: 2s all ease-in-out .1s;
+  -moz-transition: 2s all ease-in-out .1s;
+  -ms-transition: 2s all ease-in-out .1s;
+  -o-transition: 2s all ease-in-out .1s;
+  transition: 2s all ease-in-out .1s;
+}
+.fade-carousel .carousel-inner .item.active .hero {
+  opacity: 1;
+  -webkit-transition: 2s all ease-in-out .1s;
+  -moz-transition: 2s all ease-in-out .1s;
+  -ms-transition: 2s all ease-in-out .1s;
+  -o-transition: 2s all ease-in-out .1s;
+  transition: 2s all ease-in-out .1s;
+}
+
+/* Carousel Button */
+
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+  color: #FFFFFF;
+
+  background: rgba(120, 1, 22, .8);
+  border-color: #FFFFFF;
+  outline: none;
+  margin: 20px auto;
+}
+
+@media screen and (min-width: 980px){
+  .hero { width: 980px; }
+}
+@media screen and (max-width: 640px){
+  .hero h1 { font-size: 4em; }
+}
+
+
+/**  Carousel Fade **/
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  transition: opacity ease-out .7s;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 0;
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+.carousel-control {
+  opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+#featured .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+/************************
+*********Services********
+*************************/
+#services .fa-square {
+  color: #00bfa5;
+}
+
+#services p {
+  padding-bottom: 2em;
+}
+
+#services img{
+  max-width: 100%;
+}
+
+.img2 {
+  border-radius: 0 50px 50px 0;
+}
+
+.img1 {
+  border-radius: 50px 0 0 50px;
+}
+
+#services h3 {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+#services .icons {
+  padding: 2em 0;
+}
+
+/************************
+*******Facilities********
+*************************/
+.font-credit-card {
+  color: #009688;
+}
+
+#icon-credit-card {
+  background-color: #009688;
+}
+
+.font-wifi {
+  color: #00bcd4;
+}
+
+#icon-wifi {
+  background-color: #00bcd4;
+}
+
+.font-hand-paper-o {
+  color: #ffc107;
+}
+
+#icon-hand-paper-o {
+  background-color: #ffc107;
+}
+
+.font-spinner {
+  color: #f44336;
+}
+
+#icon-spinner {
+  background-color: #f44336;
+}
+
+.font-television {
+  color: #9c27b0;
+}
+
+#icon-television {
+  background-color: #9c27b0;
+}
+
+.font-power-off {
+  color: #4caf50;
+}
+
+#icon-power-off {
+  background-color: #4caf50;
+}
+
+.font-fire {
+  color: #ff9800;
+}
+
+#icon-fire {
+  background-color: #ff9800;
+}
+
+.font-car {
+  color: #e91e63;
+}
+
+#icon-car {
+  background-color: #e91e63;
+}
+
+#icon-credit-card, #icon-wifi, #icon-hand-paper-o, #icon-spinner, #icon-television, #icon-power-off, #icon-fire, #icon-car {
+  color: #FFFFFF;
+}
+
+.facilities-icons {
+  padding: 2em 0;
+}
+
+
+#facilities span {
+  border-radius: 2em;
+}
+
+
+/************************
+*********Gallery*********
+*************************
+#gallery img, #gallery a {
+  max-width: 100% !important;
+}
+
+#gallery a {
+  padding: 0;
+}
+
+#gallery a, #gallery img {
+  height: auto 0;
+} */
+
+#gallery_padding {
+  padding: 10px;
+}
+
+.nav-gallery > li {
+    float:none;
+    display:inline-block;
+    *display: inline;     /* for IE7*/
+    *zoom:1;              /* for IE7*/
+}
+
+.nav-gallery {
+    text-align:center;
+}
+
+.row-centered {
+    text-align:center;
+}
+
+.col-xs-4 {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+************************
+******Testimonials*******
+*************************/
+/* Testimonials Page */
+#quote-carousel
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+  left: -10%;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+  right: -10%;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+  background: transparent;
+}
+#quote-carousel .carousel-indicators .active
+{
+  background: #FFFFFF;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+
+.item blockquote img {
+  margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
+
+#testimonials blockquote, #testimonials small, #testimonials .fa {
+  color: #FFFFFF;
+  /*text-shadow:0 0 100px #000000;*/
+}
+
+#testimonials img {
+  background-color: #FFFFFF;
+  border: 1px solid;
+}
+
+#testimonials a {
+  color: #FFFFFF;
+  /*text-shadow:0 0 100px #000000;*/
+}
+
+
+/**
+  MEDIA QUERIES
+  */
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    #quote-carousel
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+
+  }
+
+  /* Small devices (tablets, up to 768px) */
+  @media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators {
+      bottom: -25%;
+    }
+    #quote-carousel .carousel-indicators li {
+      display: inline-block;
+      margin: 0px 5px;
+      width: 15px;
+      height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+      margin: 0px 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .background-island {
+    max-height: 100%;
+    background: url(../images/bg_island.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+
+  @media only screen
+  and (max-width: 992px) {
+    .background-cafe {
+      max-height: 100%;
+      background: url(../images/bg_island.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    }
+  }
+
+/************************
+*********Contact*********
+*************************/
+#contact h4 {
+  margin-bottom: 30px;
+}
+
+#contact a:hover {
+  background-color: transparent;
+}
+
+.p-contact-email {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.p-contact-phone {
+  color: #FFFFFF;
+}
+
+
+#contact .fa-circle {
+  color: #FFFFFF;
+}
+
+#contact .fa-stack-1x {
+  color: #780116;
+}
+
+#contact h4, #contact ul {
+  color: #FFFFFF;
+}
+
+.map-reminder {
+  color: #000000;
+  text-align: left;
+  padding-top: 1em;
+  padding-left: 2em;
+  font-size: 1em;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #FFFFFF;
+}
+
+#map {
+  height: 300px;
+  min-width: 100%;
+}
+
+#contact {
+  background-color: #780116;
+}
+
+/************************
+*********Footer*********
+*************************/
+.font-copyright {
+  font-size: 1.5em;
+}
+
+.font-brand {
+  font-size: 3em;
+  color: #DAA520;
+}
+
+.font-subbrand {
+  margin-top: -1em;
+  font-size: 1em;
+  color: #DAA520;
+}
+
+.nav-pills p {
+  font-size: 1.2em;
+}
+
+footer {
+  background: #212121;
+  font-size: .8em;
+  padding: 1em 0 1em 0;
+}
+
+footer a {
+  color: #E0E6AE;
+}
+
+footer a:hover {
+  color: #EEC856 !important;
+}
+
+footer p {
+  color: white;
+  font-size: 1.2em;
+}
+footer span {
+  border-radius: 50px;
+}
+
+/* Social Network Links */
+#icon-facebook {
+  border: 2px #3b5998 solid;
+}
+
+#icon-twitter {
+  border: 2px #1da1f2 solid;
+}
+
+#icon-instagram {
+  border: 2px #BF8360 solid;
+}
+
+#icon-google-plus {
+  border: 2px #D73D32 solid;
+}
+
+footer .phone {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #E0E6AE;
+}
+
+#quote {
+  color: #ffffff;
+  font-size: 25px;
+  font-family: "Calibri";
+  font-style: italic;
+}
+
